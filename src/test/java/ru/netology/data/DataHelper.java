@@ -23,10 +23,6 @@ public class DataHelper {
         return faker.internet().password();
     }
 
-    public static AuthInfo getRandomUser() {
-        return new AuthInfo(generateLogin(), generatePassword());
-    }
-
     public static VerificationCode getRandomCode() {
         return new VerificationCode(faker.numerify("#####"));
     }
